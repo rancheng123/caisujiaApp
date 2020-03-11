@@ -1,0 +1,1 @@
+1、现在frontEnd中 index.html 页面头部固定死，其他页面如果想改变head里的内容则不可改。

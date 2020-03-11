@@ -1,0 +1,94 @@
+.cityList{
+  .am-search{
+    height: 0.78rem;
+    line-height: 0.78rem;
+    font-size: 0.36rem;
+    padding: 0 ;
+    align-items: initial;
+    position: fixed;
+    top: 88px;
+    width: 100%;
+  }
+  .am-search-cancel{
+    display: none !important;
+  }
+  .am-search-input{
+    border-bottom: 1px solid #cccccc;
+    background-color: transparent;
+  }
+  .zhanweiBlock{
+    height: 88px;
+  }
+
+
+  .litterList{
+    position: fixed;
+    top:150px;
+    width: 60px;
+    right: 0px;
+
+    text-align: center;
+    background: white;
+    .litterItem{
+      height: 50px;
+      line-height: 50px;
+      color: #ccc;
+    }
+  }
+
+  .bigBox{
+    //padding-top: 88px;
+  }
+  .hotCitys{
+    .title{
+      font-weight: bold;
+      font-size: 38px;
+      margin: 18px ;
+    }
+    .hotCityBox{
+      background: white;
+    }
+    .hotCity{
+      font-size: 34px;
+      display: inline-block;
+      padding: 14px 22px;
+      text-align: center;
+      border: 2px solid #cccccc;
+      margin: 18px ;
+
+    }
+  }
+
+  .letterGroup{
+    .letter{
+      height: 0.58rem;
+      line-height: 0.58rem;
+      font-size: 0.40rem;
+      color: #ccc;
+      color: #999;
+      padding-left: 18px;
+      border-top: 2px solid #ccc;
+      border-bottom: 2px solid #ccc;
+
+
+    }
+    ul{
+      background: white;
+    }
+    li{
+      margin-left: 18px ;
+      height: 90px;
+      line-height: 90px;
+      font-size: 44px;
+      border-bottom: 2px solid #ccc;
+    }
+    li:last-child{
+      border-bottom: 0px ;
+    }
+  }
+
+
+
+
+
+}

@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "远程调试 CaisujiaApp",
+      "address": "127.0.0.1",
+      "port": 8390,
+      "localRoot":  "/Users/deo/WebstormProjects/workPlace/electronStudy3/Qianjia",
+      "remoteRoot": "/Users/deo/WebstormProjects/workPlace/electronStudy3/Qianjia/node_modules/_electron@5.0.10@electron/dist/Electron.app"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "startCaisujiaApp",
+      "runtimeExecutable": "/Users/deo/WebstormProjects/workPlace/electronStudy3/Qianjia/node_modules/.bin/electron",
+      "windows": {
+        "runtimeExecutable": "/Users/deo/WebstormProjects/workPlace/electronStudy3/Qianjia/node_modules/.bin/electron.cmd"
+      },
+      "program": "/Users/deo/WebstormProjects/workPlace/electronStudy3/Qianjia/main.js",
+      //"args": ["--inspect=10.28.12.65:9230"],
+      "protocol": "inspector",
+      "cwd": "/Users/deo/WebstormProjects/workPlace/electronStudy3/Qianjia",
+    }
+  ]
+}

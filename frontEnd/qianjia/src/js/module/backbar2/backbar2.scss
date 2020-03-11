@@ -1,0 +1,27 @@
+.backBar2{
+  height:88px;
+  line-height: 88px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  .realBar{
+    position: fixed;
+    z-index: 998;
+    width: 100%;
+    text-align: center;
+    background: white;
+    border-bottom: 2.5px solid #dcdbdb;
+    .b-backbtn{
+      position: absolute;
+      left:0px;
+      top: 25px;
+
+      display: flex;
+      align-items: center;
+      padding: 0 0.15rem;
+    }
+  }
+  .hiddenBar{
+
+  }
+
+}

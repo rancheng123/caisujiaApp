@@ -1,0 +1,390 @@
+@import "../../../scss/base/commonVar.scss";
+
+.g-backbar-wrap{
+  overflow: hidden;
+  .b-head-wrap{
+    height:88px;
+    //border-bottom: 2.5px solid #dcdbdb;
+  }
+  .b-head-box{
+      width:100%;
+      height:88px;
+      border-bottom: 2.5px solid #dcdbdb;
+      box-sizing: border-box;
+      background-color: #FFFFFF;
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      z-index: 3;
+  }
+  .b-title{
+    height:88px;
+    line-height:88px;
+    font-size: 36px;
+    text-align: center;
+    color: #2b2b2b;
+  }
+  .b-content{
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .b-backbtn{
+    position: absolute;
+    left:0px;
+    top:0px;
+    height:100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0.15rem;
+  }
+
+  .b-action{
+    position: absolute;
+    right:0px;
+    top:0px;
+    height:100%;
+  }
+
+  //省略号
+  .ellipsis-wrap{
+    height:100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0.2rem;
+
+    .ellipsis-box{
+        display:flex;
+        align-items: center;
+        box-align:center;
+        justify-content:center;
+        padding-right:8px;
+      }
+    .ellipsis-action{
+        position: fixed;
+        left:0px;
+        background-color: rgba(0,0,0,0.4);
+        z-index: 100;
+      }
+    .ellipsis-alert-del{
+        width:2.67rem;
+        background-color: #fff;
+        border-radius: 14px;
+        position: absolute;
+        right:0.15rem;
+        top:0.2rem;
+        width: 100%;
+    .point{
+      content: '';
+      position: absolute;
+      top:-16px;
+      right:24px;
+      width: 0;
+      height: 0;
+      border-left: 13px solid transparent;
+      border-right: 13px solid transparent;
+      border-bottom: 18px solid #fff;
+    }
+    .e-list{
+      display: flex;
+      flex-direction:column;
+      a{
+        display: flex;
+        align-items: center;
+        height:88px;
+        border-bottom:2.5px solid #dddddd;
+      }
+      a:last-child{
+        border-bottom: none;
+      }
+      .e-icon{
+        display: flex;
+        align-items: center;
+        box-align:center;
+        justify-content: center;
+        width:100px;
+        text-align: center;
+        i{
+            display: block;
+
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .zhangdan{
+            width: 32px;
+            height: 39px;
+            background-image: url("../../../image/icon/hetong.png");
+        }
+        .hetong{
+            width: 34px;
+            height: 38px;
+            background-image: url("../../../image/icon/zhangdan.png");
+        }
+      }
+    }
+    .e-list-del{
+        display: block;
+        flex-direction:row;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        z-index: 102;
+            div{
+                text-align: center;
+                line-height: 90px;
+                height: 90px;
+                background: #fff;
+            }
+            div:first-child{
+                margin-bottom: 5px;
+            }
+    }
+
+  }
+    .ellipsis-alert{
+            width:2.67rem;
+            background-color: #fff;
+            border-radius: 14px;
+            position: absolute;
+            right:0.15rem;
+            top:0.2rem;
+            .point{
+                content: '';
+                position: absolute;
+                top:-16px;
+                right:24px;
+                width: 0;
+                height: 0;
+                border-left: 13px solid transparent;
+                border-right: 13px solid transparent;
+                border-bottom: 18px solid #fff;
+            }
+        .e-list{
+        display: flex;
+        flex-direction:column;
+        a{
+            display: flex;
+            align-items: center;
+            height:88px;
+            border-bottom:2.5px solid #dddddd;
+        }
+        a:last-child{
+            border-bottom: none;
+        }
+        .e-icon{
+            display: flex;
+            align-items: center;
+            box-align:center;
+            justify-content: center;
+            width:100px;
+            text-align: center;
+            i{
+                display: block;
+
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            .zhangdan{
+                width: 32px;
+                height: 39px;
+                background-image: url("../../../image/icon/hetong.png");
+            }
+            .hetong{
+                width: 34px;
+                height: 38px;
+                background-image: url("../../../image/icon/zhangdan.png");
+            }
+        }
+        }
+        .e-list-del{
+            display: block;
+            flex-direction:row;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+                div{
+                    text-align: center;
+                    line-height: 90px;
+                    height: 90px;
+                    background: #eee;
+                }
+                div:first-child{
+                    margin-bottom: 5px;
+                }
+        }
+
+    }
+  }
+
+    //问号
+    .question-box{
+        display:flex;
+        align-items: center;
+        box-align:center;
+        justify-content:center;
+
+        height: 100%;
+        padding: 0 20px;
+    }
+
+    //活动页
+    .home-box{
+        display:flex;
+        align-items: center;
+        box-align:center;
+        justify-content:center;
+
+        height: 100%;
+        padding: 0 33px;
+        i{
+            display: block;
+            width: 35px;
+            height: 36px;
+            background-image: url("../../../image/icon/home.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+
+    //底部菜单
+    .bottomMenu-wrap{
+        height:100%;
+        display: flex;
+        align-items: center;
+        padding: 0 0.2rem;
+        .bMenu-action{
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .bMenu-list-box{
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            background: #fff;
+        }
+        .l-item{
+            display: block;
+            height: 80px;
+            line-height: 80px;
+            font-size: 26px;
+            text-align: center;
+            border-bottom: 2px solid $borderColor;
+        }
+        .l-item:last-child{
+            border-bottom: none;
+        }
+    }
+
+    //优惠券 说明
+    .explain-box{
+        display:flex;
+        align-items: center;
+        box-align:center;
+        justify-content:center;
+
+        height: 100%;
+        padding: 0 40px;
+    }
+    //消息中心 全读
+    .readAll-box{
+        display:flex;
+        align-items: center;
+        box-align:center;
+        justify-content:center;
+        color: $commonColorRed;
+        height: 100%;
+        padding: 0 40px;
+    }
+    .bankPassword{
+        background: #fff;
+        position:fixed;
+        bottom:0;
+        left:0;
+        width: 100%;
+        z-index: 102;
+        .bankInput{
+            padding:0 30px;
+        }
+        li:first-child{
+            font-size:30px;
+            text-align: center;
+            line-height: 98px;
+            height:100px;
+            border-bottom: 2px solid #ccc;
+        }
+        li:nth-child(2){
+            font-size:26px;
+            color:#999;
+            padding-left: 30px;
+            line-height: 100px;
+            height: 100px;
+        }
+        li:last-child{
+            font-size: 30px;
+            color:#fb343e;
+            text-align: right;
+            margin-right: 30px;
+            line-height: 80px;
+            height: 80px;
+            padding-bottom: 50px;
+        }
+        .close{
+            position: absolute;
+            top:35px;
+            left:90%;
+            width: 28px;
+            height:28px;
+        }
+    }
+    .close_btn_bank{
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.2;
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 101;
+        display: block;
+    }
+    .closeBankMotail{
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.2;
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 101;
+        display: none;
+    }
+
+    // 自动投标
+    .autoBid-icon{
+        display: block;
+        padding:24px 31px 28px 26px;
+        i{
+            display: block;
+            width: 35px;
+            height: 36px;
+            background-image: url("../../../image/icon/autoBidRule.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    .consumpeQ-box{
+        i{
+            display: block;
+            width: 38px;
+            height: 38px;
+            background-image: url("../../../image/icon/consumeQuestion.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin: 25px;
+        }
+    }
+}

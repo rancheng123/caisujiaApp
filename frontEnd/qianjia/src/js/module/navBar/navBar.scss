@@ -1,0 +1,58 @@
+.navBar{
+
+  .btn_slide{
+    width: 35px;
+    height: 30px;
+    background: url(../../../image/icon/slideBtn.png) no-repeat;
+    background-size: 100%;
+    display: inline-block;
+  }
+
+
+
+  .controllCover{
+    height: 84px;
+    width: 750px;
+    position: fixed;
+   // background: rgba(140,44,43,0.3);
+    background: rgba(0, 0, 0, 0.8);
+    left: 0px;
+    top: 95px;
+    z-index: 100;
+    line-height: 24px;
+    .controllItem{
+      text-align: center;
+    }
+
+    .iconQianjia{
+      background: url(../../../image/icon/moneyBag.png) no-repeat center bottom;
+    }
+    .iconTouzi{
+      background: url(../../../image/icon/touzi.png) no-repeat center bottom;
+    }
+    .iconMy{
+      background: url(../../../image/icon/k_bottom_icons4.png) no-repeat center bottom;
+    }
+    .iconQianjia,.iconTouzi,.iconMy{
+      background-size: 100% auto;
+      display: inline-block;
+      overflow: hidden;
+      width: 42px;
+      height: 42px;
+      margin-top: 0.1rem;
+    }
+    .iconText{
+      font-size: 20px;
+      color: white;
+    }
+
+    .controllItem.active{
+      .iconQianjia,.iconTouzi,.iconMy{
+        background-position: -0px -0px;
+      }
+      .iconText{
+        color: #fb343e;
+      }
+    }
+  }
+}

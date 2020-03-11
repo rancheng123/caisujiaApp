@@ -1,0 +1,92 @@
+{
+    "productName": "mTool",
+    "appId": "com.mxj360.mTool",
+    "electronVersion": "5.0.6",
+    "directories": {
+        "buildResources": "buildResources",
+        "output": "dev-release",
+        "app": "."
+    },
+    "files": [
+        "buildResources/",
+        "node_modules/",
+
+
+        "electron-builder-dev.json",
+        "main.js",
+        "update.js",
+        "zoomMain.js",
+        "package.json"
+    ],
+
+    "asar": false,
+    "artifactName": "${productName}-${version}-${arch}.${ext}",
+    "dmg": {
+        "window": {
+            "width": 550,
+            "height": 320
+        },
+        "contents": [
+            {
+                "x": 130,
+                "y": 180
+            },
+            {
+                "x": 410,
+                "y": 180,
+                "type": "link",
+                "path": "/Applications"
+            }
+        ]
+    },
+    "win": {
+        "target": [
+            {
+                "target": "nsis-web",
+                "arch": [
+                    "x64",
+                    "ia32"
+                ]
+            }
+        ]
+    },
+    "squirrelWindows": {
+        "iconUrl": "https://s3.cn-north-1.amazonaws.com.cn/mtool/icon.ico",
+        "msi": false
+    },
+    "nsisWeb": {
+        "perMachine": true,
+        "artifactName": "${productName}-web-setup-${version}.${ext}",
+        "installerLanguages":"zh_CN"
+    },
+    "nsis": {
+        "perMachine": true,
+        "artifactName": "${productName}-setup-${version}.${ext}",
+        "installerLanguages":"zh_CN"
+    },
+
+
+
+    /*
+
+        亚马逊账号
+            Aws 只读账号
+            url：http://console.amazonaws.cn
+            账户：889511930858
+            用户名：mxjreadonly
+            密码：5WouEchvta
+
+
+
+                //mTool 存放的地方
+                https://console.amazonaws.cn/s3/buckets/mtool/?region=cn-northwest-1&tab=overview
+   */
+
+    "publish": {
+        "provider": "s3",
+        "bucket": "mtool",
+        "region": "cn-north-1",
+        "endpoint": "https://s3.cn-north-1.amazonaws.com.cn",
+        "path": "stable-releases/${os}"
+    }
+}

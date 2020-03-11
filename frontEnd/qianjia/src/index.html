@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+    <!-- viewport的定义？？？？？？？？？ -->
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <!--删除默认的苹果工具栏和菜单栏-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>钱夹</title>
+
+  <script>
+        //动态计算根元素的font-size
+        (function(){
+          function setFontSize(){
+              var clientWidth = document.documentElement.clientWidth;
+              if (clientWidth>750){ //页面最大750px
+                  document.documentElement.style.fontSize = 100*750/750+'px';
+              }else if(clientWidth<320){ //页面最小320px
+                  document.documentElement.style.fontSize = 100*320/750+'px';
+              }else{
+                  document.documentElement.style.fontSize = 100*document.documentElement.clientWidth/750+'px';
+              }
+          }
+          setFontSize();
+          window.onload = window.onresize = function(){
+              setFontSize();
+          }
+        })();
+
+
+    </script>
+</head>
+<body>
+    <div id="app"></div>
+
+
+    <!--
+    <script src="https://s19.cnzz.com/z_stat.php?id=1263243694&web_id=1263243694" language="JavaScript"></script>
+    <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_1263243694'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263243694' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1263243694'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263243694%26online%3D1' type='text/javascript'%3E%3C/script%3E"));</script>
+-->
+
+</body>
+</html>

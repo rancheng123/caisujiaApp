@@ -1,0 +1,70 @@
+@import "../../../scss/base/commonVar.scss";
+.tipPage-wrap{
+
+    overflow: hidden;
+    padding-top: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .tipPage-box{
+        text-align: center;
+        transform: translateY(-30%);
+        .t-icon{
+            width: 166px;
+            height: 166px;
+            border-radius: 50%;
+            background-color: $commonColorRed;
+            margin:0px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .time{
+            width: 80px;
+            height: 80px;
+            background-image: url(../../../image/icon/time.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .money{
+            width: 68px;
+            height: 81px;
+            background-image: url(../../../image/icon/money.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin-top: 15px;
+        }
+        .t-title{
+            font-size: 40px;
+            color: $commonColorRed;
+            line-height: 60px;
+            padding-top: 32px;
+        }
+        .t-desc{
+
+            font-size: 28px;
+            color: #999;
+            line-height: 48px;
+            padding: 34px 0px;
+            text-align: center;
+        }
+        .desc-firstline{
+            width: 420px;
+            margin: 0 auto;
+        }
+        .t-button{
+            display: inline-block;
+            height: 76px;
+            line-height: 76px;
+            border: 4px solid $commonColorRed;
+            color: $commonColorRed;
+            border-radius: 50px;
+            font-size: 30px;
+            padding: 0px 48px;
+            margin-top: 20px;
+        }
+    }
+
+}
