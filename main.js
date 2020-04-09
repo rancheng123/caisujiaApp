@@ -55,7 +55,7 @@ function createWindow () {
         }
     })
 
-    win.loadURL('http://192.168.1.3:8388/')
+    win.loadURL('http://192.168.1.6:8388/')
 
     // 这个有问题
     //win.loadURL('/Users/deo/WebstormProjects/workPlace/workDeliver/mxj-desktop-app-dir/mxj-desktop-appUpdate/dist/main.html')

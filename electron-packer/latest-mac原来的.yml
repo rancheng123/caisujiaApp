@@ -1,0 +1,19 @@
+version: 5.9.3
+files:
+  - url: dev-mTool-5.9.3.zip
+    sha512: ZeHUw6vlp1G2z2cwTj+74ItzuENhCE/f6hTJng9cmo6jXlL2vG8deTGjxJnOYJnEplJ1w2pfn75HPHmHfTBJzg==
+    size: 120476847
+    blockMapSize: 121581
+  - url: dev-mTool-5.9.3.dmg
+    sha512: RmaoZOS2ypaUzrN0B5k286OWlVFbPtD+82r2/Vn77dEaE/ATtWR/Wal4lPdHr1CwbHgJrIIcCn4uwZU5Y994bw==
+    size: 118763346
+path: dev-mTool-5.9.3.zip
+sha512: ZeHUw6vlp1G2z2cwTj+74ItzuENhCE/f6hTJng9cmo6jXlL2vG8deTGjxJnOYJnEplJ1w2pfn75HPHmHfTBJzg==
+releaseNotes: |-
+  5.9.3
+
+    新的视频会议
+
+  [//]: # (--force-update: false--)
+  [//]: # (当上面的注释force-update的值为true时，此版本为强制升级版本)
+releaseDate: '2020-03-05T03:34:27.788Z'
