@@ -67,7 +67,7 @@
     "react-validation": "^2.10.9",
     "rmc-cascader": "^4.1.2",
     "underscore": "^1.8.3",
-    "validator": "^7.0.0",
+    "validator": "^13.7.0",
     "electron-updater": "^4.2.2"
   },
   "scripts": {
